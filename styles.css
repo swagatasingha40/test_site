@@ -1,0 +1,254 @@
+html {
+  font-family: century-gothic, sans-serif;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: #0f1320;
+  color: #ffffff;
+  margin: 0px;
+}
+
+@font-face {
+  font-family: "MyWebFont";
+  src: url("fonts/century-gothic-font/CenturyGothic.ttf") format("truetype");
+}
+
+.box-1,
+.box-2 {
+  background-color: white;
+  height: 240px;
+  width: 100vw;
+  border-radius: 0px 0px 0px 50vw;
+}
+
+.box-2 {
+  margin-top: 200px;
+  border-radius: 0px 50vw 0px 0px;
+}
+
+.circle-container {
+  display: flex;
+  gap: 10px;
+  align-items: flex-end;
+}
+
+.numbered-circle,
+.numbered-circle-2,
+.numbered-circle-3,
+.numbered-circle-4 {
+  height: 78px;
+  width: 78px;
+  box-shadow: 0px 0px 20px 2px #22a75d40;
+  background-color: #22a75d;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.numbered-circle-2 {
+  box-shadow: 0px 0px 20px 2px #2278d440;
+  background-color: #2278d4;
+}
+
+.numbered-circle-3 {
+  box-shadow: 0px 0px 20px 2px #ffd100;
+  background-color: #ffd100;
+}
+
+.numbered-circle-4 {
+  box-shadow: 0px 0px 20px 2px #e20613;
+  background-color: #e20613;
+}
+
+.numbered-circle p,
+.numbered-circle-2 p,
+.numbered-circle-3 p,
+.numbered-circle-4 p {
+  position: relative;
+  top: -4px;
+  left: 20px;
+  color: #0f1320;
+  font-weight: 700;
+  font-size: 28px;
+}
+
+.features-section {
+  display: flex;
+  padding: 8vw 8vw 0vw 8vw;
+}
+
+.first-container,
+.second-container {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.smaller-circle,
+.smaller-circle-2,
+.smaller-circle-3,
+.smaller-circle-4 {
+  height: 12px;
+  width: 12px;
+  background-color: #22a75d;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.smaller-circle-2 {
+  background-color: #2278d4;
+}
+
+.smaller-circle-3 {
+  background-color: #ffd100;
+}
+
+.smaller-circle-4 {
+  background-color: #e20613;
+}
+
+.circle-text {
+  margin: 8px 0px 0px 0px;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.feature-list {
+  display: flex;
+  gap: 21px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.feature-list-p1,
+.feature-list-p2,
+.feature-list-p3,
+.feature-list-p4 {
+  font-weight: 700;
+  font-size: 12px;
+  margin: 0px;
+}
+
+.p1 {
+  color: #22a75d;
+}
+
+.p2 {
+  color: #2278d4;
+}
+
+.p3 {
+  color: #ffd100;
+}
+
+.p4 {
+  color: #e20613;
+}
+
+.written-section {
+  margin-top: 50px;
+}
+
+.description-container {
+  padding: 0vw 8vw;
+  margin-top: 192px;
+}
+
+.paragraph-container {
+  width: 40%;
+}
+
+.header-1 {
+  display: flex;
+  gap: 13.36px;
+  align-items: center;
+}
+
+.header-1 img {
+  width: 52.7px;
+  height: 52.7px;
+}
+
+.style-p-1 {
+  font-weight: 700;
+}
+
+.style-p-2 {
+  font-weight: 400;
+}
+
+.read-button {
+  padding: 15px 30px;
+  border: solid 2px #22a75d;
+  background-color: transparent;
+  color: white;
+  border-radius: 25px;
+  margin-top: 20px;
+}
+
+.read-button:hover {
+  background-color: #22a75d;
+  color: #ffffff;
+}
+
+.gradient-box {
+  background-image: linear-gradient(to bottom, #adbfff, #0039ff);
+  border-radius: 25px;
+  width: 40vw;
+  height: 40vw;
+}
+
+.gradient-box img {
+  position: relative;
+  width: 40vw;
+  bottom: 1.75vw;
+  left: -70px;
+}
+
+.description-img-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 480px) {
+  .features-section {
+    flex-direction: column;
+  }
+  .first-container,
+  .second-container {
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+  .set-1 {
+    margin-bottom: 40px;
+  }
+
+  .paragraph-container,
+  .header-1 {
+    display: none;
+  }
+
+  .gradient-box {
+    background-image: linear-gradient(to bottom, #0039ff, #0039ff);
+    border-radius: 25px 25px 0px 0px;
+    width: 100vw;
+    height: 55vh;
+  }
+
+  .description-container {
+    padding: 0vw 0vw;
+  }
+
+  .gradient-box img {
+    position: relative;
+    width: 45vh;
+    top: 75px;
+    left: 0px;
+  }
+
+  .box-1,
+  .box-2 {
+    display: none;
+  }
+}
